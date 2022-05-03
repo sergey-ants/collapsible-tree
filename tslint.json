@@ -1,0 +1,28 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:latest",
+        "tslint-react"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-submodule-imports": false,
+        "no-console": false,
+        "indent": [true, "spaces", 4],
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "always",
+                "singleLine": "never"
+            }
+        ],
+        "max-line-length": [
+            true,
+            {
+                "limit": 160,
+                "ignore-pattern": "^import |^export {{.*?}}"
+            }
+        ]
+    },
+    "rulesDirectory": []
+}

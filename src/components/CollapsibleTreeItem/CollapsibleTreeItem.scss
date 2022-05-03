@@ -1,0 +1,66 @@
+$item-height: 20px;
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $item-height;
+    user-select: none;
+    white-space: nowrap;
+
+    &__collapsible {
+        cursor: pointer;
+    }
+
+    @for $i from 0 through 10 {
+        &__nesting-level-#{$i} {
+            padding-left: $i * 30px;
+        }
+    }
+
+    &:hover {
+        background-color: aliceblue;
+    }
+}
+
+.action-button-panel {
+    display: none;
+    margin-left: 20px;
+
+    &__visible {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    outline: none;
+    border: none;
+    opacity: 0.1;
+    height: $item-height;
+    width: $item-height;
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.remove-item-button {
+    background-color: rgb(240, 70, 70);
+    color: white;
+}
+
+.add-new-item-button {
+    background-color: rgb(45, 150, 45);
+    color: white;
+}
+
+.icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
