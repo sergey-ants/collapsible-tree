@@ -6,4 +6,5 @@ export interface CollapsibleTreeItemState {
     id: string;
     label: string;
     showActionButtons: boolean;
+    showAddNewButton: boolean;
 }

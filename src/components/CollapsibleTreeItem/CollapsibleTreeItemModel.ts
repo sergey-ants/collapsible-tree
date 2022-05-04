@@ -7,7 +7,7 @@ export class CollapsibleTreeItemModel {
     constructor(
         public readonly id: string,
         public label: string,
-        public parent: CollapsibleTreeItemModel | undefined
+        public parent: CollapsibleTreeItemModel | undefined,
     ) {
         if (!!parent) {
             parent.addChildren([this]);
